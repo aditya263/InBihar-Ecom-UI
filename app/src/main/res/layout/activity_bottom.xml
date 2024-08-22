@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:background="@color/purple_500"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.BottomActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/frames"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </LinearLayout>
+
+        <com.aditya.inbihar.Model.CurvedBottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="@dimen/_50sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="parent"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/lin_id"
+        android:layout_gravity="bottom|center"
+        android:layout_margin="@dimen/_25sdp"
+        android:background="@drawable/oval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.sdsmdg.harjot.vectormaster.VectorMasterView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:id="@+id/fab"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/_8sdp"
+            android:elevation="@dimen/_4sdp"
+            android:visibility="visible"
+            app:vector_src="@drawable/ic_home" />
+
+        <com.sdsmdg.harjot.vectormaster.VectorMasterView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:id="@+id/fab1"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/_10sdp"
+            android:elevation="@dimen/_4sdp"
+            android:visibility="gone"
+            app:vector_src="@drawable/ic_profile" />
+
+        <com.sdsmdg.harjot.vectormaster.VectorMasterView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:id="@+id/fab2"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/_10sdp"
+            android:elevation="@dimen/_4sdp"
+            android:visibility="gone"
+            app:vector_src="@drawable/ic_home" />
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

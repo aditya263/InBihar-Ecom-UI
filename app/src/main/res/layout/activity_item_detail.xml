@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:scrollbars="none"
+    xmlns:numberpicker="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".UI.ItemDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/purple_500">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="2dp"
+            app:cardElevation="2dp"
+            card_view:cardBackgroundColor="@color/white"
+            card_view:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:text="Buy Correction Pen Metal Tip online in patna at best price, Pay only after delivery of your Correction Pen Metal Tip at your doorstep. Get It Delivered within 24 Hours."
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/_15sdp"/>
+
+                <ImageView
+                    android:layout_gravity="center_horizontal"
+                    android:scaleType="fitXY"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_width="@dimen/_300sdp"
+                    android:layout_height="@dimen/_180sdp"
+                    android:src="@drawable/pen_demo"/>
+                <!--
+                            <View
+                                android:layout_marginTop="@dimen/_8sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_1sdp"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:background="@color/lightGrey"/>
+                -->
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="@dimen/_1sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="2dp"
+            app:cardElevation="2dp"
+            card_view:cardBackgroundColor="@color/white"
+            card_view:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:text="Oddy Correction Pen Metal Tip"
+                    android:textStyle="bold"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/_15sdp"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_height="wrap_content">
+
+                    <me.himanshusoni.quantityview.QuantityView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/quantityView_default"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:qv_addButtonBackground="@color/green"
+                        app:qv_addButtonText="+"
+                        app:qv_addButtonTextColor="@color/white"
+                        app:qv_removeButtonBackground="@color/red"
+                        app:qv_removeButtonText="-"
+                        app:qv_removeButtonTextColor="@color/white"
+                        app:qv_quantityBackground="@color/lightGrey"
+                        app:qv_quantityTextColor="@color/black"
+                        app:qv_quantityPadding="@dimen/_15sdp"
+                        app:qv_maxQuantity="30"
+                        app:qv_minQuantity="1"
+                        app:qv_quantityDialog="true"
+                        app:qv_quantity="1" />
+
+                    <Button
+                        android:id="@+id/login"
+                        android:layout_width="@dimen/_180sdp"
+                        android:layout_height="@dimen/_33sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="ADD TO CART"
+                        android:layout_alignParentEnd="true"
+                        android:textColor="@color/white"
+                        android:background="@color/purple_500"
+                        android:textSize="@dimen/_14sdp"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="@dimen/_1sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="2dp"
+            app:cardElevation="2dp"
+            card_view:cardBackgroundColor="@color/white"
+            card_view:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txtActualCost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₹ 25.00"
+                        android:textStyle="bold"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:textSize="@dimen/_16sdp"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:textColor="@color/dark_grey"
+                        android:layout_marginTop="@dimen/_10sdp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₹ 19.00"
+                        android:textStyle="bold"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:textSize="@dimen/_16sdp"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:textColor="@color/purple_500"
+                        android:layout_marginTop="@dimen/_10sdp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(Per piece)"
+                        android:textStyle="bold"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:textColor="@color/dark_grey"
+                        android:layout_marginTop="@dimen/_10sdp"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="You Save:"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₹ 6.00"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(24%)"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Brand:"
+                        android:textStyle="bold"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Oddy"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Contents:"
+                        android:textStyle="bold"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8ml"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Availability:"
+                        android:textStyle="bold"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Available"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>
